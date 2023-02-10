@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+
+/* common styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+html {
+    font-family:'IBM Plex Serif', serif;
+    scroll-behavior: smooth;
+
+}
+
+.section-1{
+
+    width: 100%;
+    height: 118px;
+    background-color: white;
+}
+
+.navigationWrapper{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1.5px solid #aaa ;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar {
+    width: 120rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* logo */
+.nav-Logo img{
+    width: 170px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/* end of logo */
+
+/* navigation links */
+.nav-list {
+    display: flex;
+}
+.nav-list-items {
+    color: white;
+    padding: 18px 10px;
+    transition: transform 0.4s;
+}
+
+.nav-list-items a {
+    color: #3498db;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+
+.nav-list-items:hover {
+    /* border-bottom: 2px solid white; */
+    
+    transform: scale(1.2);
+
+}
+
+.nav-links:hover {
+    color: #e74c3c;
+   
+}
+/* buttons */
+
+.nav-buttons {
+    margin-right: 20px;
+}
+
+.nav-btn {
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #e74c3c;
+    font-size: 1em;
+    font-weight: 780;
+    border: none;
+    border-radius: 40px;
+}
+
+.nav-btn:hover {
+   cursor: pointer;
+}
+
+.nav-login {
+    background: none;
+    border: 1px solid red;
+    color:black;
+}
+
+.nav-login:hover {
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+}
+
+.nav-details {
+    width: 100%;
+    height: 38px;
+    background-color: #0a3d62;
+}
+
+.nav-details h1 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 400;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 50px;
+
+}
+
+/* End of Section 1  */
+
+
+/* Start Section 2 Full of details about Package */
+
+.details {
+    width: 100%;
+    height: 2200px;
+    background-color: rgb(225, 225, 225);
+    position: relative;
+}
+
+.details-wrapper {
+    position: absolute;
+    margin: 50px 40px;
+    width: 91%;
+    height: 2100px;
+    background-color: white;
+    
+}
+
+.detail-heading {
+    text-align: center;
+    font-family: 'Hachi Maru Pop', cursive;    
+    font-weight: 500;
+    text-shadow: 3px 4px 6px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+
+}
+
+.detail-img {
+    width: 93%;
+    margin: 30px 30px;
+    box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 6px;
+}
+
+.book-btn {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+
+}
+
+.booking-btn {
+    background-color: rgb(36, 215, 247);
+    font-size: 1.8em;
+    padding: 17px 50px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+
+}
+
+.detailing-heading {
+    display: flex;
+}
+
+.direction-heading {
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    margin-left: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    background-color: rgb(36, 215, 247);
+    margin-right: 20px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+}
+
+.price span{
+    color: black;
+    background-color: white;
+    padding: 3px 4px;
+}
+
+.main-line {
+    height: 2px;
+    margin: 0 20px;
+    width: 95.5%;
+    background-color: rgba(199, 197, 197, 0.8) ;
+}
+
+.detailing-box {
+    width: 95.5%;
+    margin: 30px 30px;
+    position: relative;
+}
+
+.days {
+    font-size: 2.4em;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: rgb(179, 177, 177);
+    letter-spacing: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+}
+
+.small-line {
+    height: 2px;
+    background-color: rgba(199, 197, 197, 0.8) ;
+    width: 95.5%;
+    margin-top: 20px;
+}
+
+.small-line2 {
+    height: 2px;
+    background-color: rgba(199, 197, 197, 0.8) ;
+    width: 95.5%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.detailings {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: rgb(133, 133, 133);
+
+}
+
+.readmore {
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 40px;
+    color: rgb(36, 215, 247) ;
+    right: 0;
+}
+
+
+/* End of Section 2 */
+
+/* Section 6 Contact Us */
+
+.section-3 { 
+    width: 100%;
+    height: 650px;
+    background-color: #252526;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+} 
+.contact-heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    color: white;
+    opacity: 0.8;
+}
+
+.section-heading-line {
+    background-color: white;
+    opacity: 0.7;
+    margin-top: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+.contact-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-wrapper h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: white;
+    opacity: 0.8;
+
+}
+
+.contact-details {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+
+
+.contact-details div {
+    width: 150px;
+    text-align: center;
+    margin: 10px 40px;
+
+}
+
+.contact-details i{
+    font-size: 2.5em;
+    color: #7a1010;
+}
+
+.contact-details h3 {
+    font-family: 'Georama', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.contact-details p {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 10px;
+    background-color: #444;
+    color: #eee;
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Georama', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.contact-form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 149px;
+}
+
+.contact-form input[type="submit"]{
+    background-color: #7a1010;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: #5f0303;
+}
+
+/* End of Section 3 Contact Us */
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 75px;
+    background-color: #0a3d62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-navigation a {
+    color: white;
+    padding: 0 10px;
+    font-family: 'Georama', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s;
+}
+
+
+.copyright {
+    color:#18dcff;
+}
+
+.footer-navigation a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+    
+}
+
+
+/* End of Section 6 Contact Us Section*/

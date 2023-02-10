@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+
+    <title>About Us</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Section 1 -->
+
+        <div class="section-1">
+         <!-- navigation bar -->
+            <div class="navigationWrapper">
+                <div class="navbar">
+                <!-- logo -->
+                    <div class="nav-Logo">
+                        <img src="../Logo/ColorLogo2.png" alt="">
+                    </div>
+                <!-- end of logo -->
+                <!-- navigation Links -->
+                    <ul class="nav-list">
+                        <li class="nav-list-items">
+                            <a href="http://localhost/Roadtripsrilanka/index.html" class="nav-links">Home</a>
+                        </li>
+                        <li class="nav-list-items">
+                            <a href="http://localhost/Roadtripsrilanka/Packages/package.html" class="nav-links">Holiday Packages</a>
+                        </li>
+                        <li class="nav-list-items">
+                            <a href="http://localhost/Roadtripsrilanka/Destinations/Destination.html" class="nav-links">Destination</a>
+                        </li>
+                        <li class="nav-list-items">
+                            <a href="#Contact-Us" class="nav-links">Contact Us</a>
+                        </li>
+                    </ul>
+                <!-- end of navigation links -->
+                    <!--Log in & Sign up Buttons  -->
+                    <div class="nav-buttons">
+                        <button onclick="window.location.href='http://localhost/Roadtripsrilanka/login.php';" class="nav-btn nav-login">Log In</button>
+                            <button onclick="window.location.href='http://localhost/Roadtripsrilanka/signin.php';" class="nav-btn nav-signup">Sign Up</button>
+                    </div>
+                    <!--end of Log in & Sign up Buttons  -->
+                </div>
+            </div>
+            <div class="nav-details">
+                <h1>About Us - Sri Lanka Road Trip</h1>
+            </div>    
+        </div>
+
+        <!-- End of section 1 -->
+
+        <!-- Section 2 Abous Us details -->
+
+        <div class="section-2">
+            <div class="aboutUs-wrapper">
+                <div class="aboutus-wrapper-part">
+                    <h1 class="AU-Heading">
+                    About Us
+                    </h1>
+                    <p class="aboutus-paragraph">The Website is designed in such a way that it is user friendly and is updated with all the latest statistics regarding the country. "Road Trip SriLanka" brings Sri Lanka and its famous places for sightseeing right to the tip of your fingers not only you will be very familiar with the country even before you visit it but you will be able to plan your itinerary in advance using the resources provided by the website itself. The website gives all the latest pictures and data about places and in the meantime provides helpful hints as to how to spend quality time in Sri Lanka.
+                    </p>
+                   
+                    <p class="aboutus-paragraph"> "Road Trip Sri Lanka" is a multimedia company at first dedicated to web developing. But now it is also dedicated in bringing Sri Lanka forward to the world and to encourage people from different walks of life to visit the beautiful country.
+                    </p>
+
+                    <div class="vision-mission">
+                        <div class="vision-mission-heading">Vision</div>
+                        <p>To be the best website that provides factual and reliable data about Travel in Sri Lanka.</p>
+                    </div>
+                    <div class="vision-mission">
+                        <div class="vision-mission-heading">Mission</div>
+                        <p>To bring the best and reliable facts about Sri Lanka and Travel right to your finger tips.</p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- End of Section 2 Abous Us details -->
+
+        <!-- Section 3 Contact us -->
+        <div class="section-3" id="Contact-Us" >
+            <h1 class="contact-heading">Contact</h1>
+            <div class="section-heading-line"></div>
+                <div class="contact-wrapper">
+                    <div class="contact-details">
+                        <div class="phone">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Phone</h3>
+                            <p>+(94) 77 859 62 54</p>
+                            <p>+(94) 11 275 87 95</p>   
+                        </div>
+                        <div class="address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Address</h3>
+                            <p>No.26,</p>
+                            <p>Sir Marcus Road,</p>
+                            <p>Colombo 07,</p>
+                            <p>Sri Lanka.</p>
+                        </div>
+                        <div class="email">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <p>Srilankaroadtrip@gmail.com</p>
+                        </div>
+                    </div>
+                    <h1>Get in Touch</h1>
+                    <form action="contact.php" method="POST" class="contact-form"> 
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="messege" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                        <input type="submit" name="submit" value="Send Message">
+                    </form>
+                </div>
+        </div>
+        <!-- End of section 3 Contact us -->
+         <!-- Footer -->
+         
+         <footer class="footer">
+            <div class="footer-navigation">
+                <a href="http://localhost/Roadtripsrilanka/index.html">Home</a>
+                <a href="http://localhost/Roadtripsrilanka/Packages/package.html">Holiday Packages</a>
+                <a href="http://localhost/Roadtripsrilanka/Destinations/Destination.html">Destination</a>
+                <a href="http://localhost/Roadtripsrilanka/aboutUs/aboutus.html">About Us</a>
+            </div>
+            <p class="copyright">
+                Copyright &copy;RoadTripSriLanka All Right Reserved.
+            </p>
+
+        </footer>
+        <!-- End of Footer -->
+    </div>
+</body>
+</html>

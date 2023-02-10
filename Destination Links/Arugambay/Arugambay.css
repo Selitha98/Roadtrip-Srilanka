@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Noto+Sans+HK:wght@100;400;700&display=swap');
+/* common styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+html {
+    font-family:'IBM Plex Serif', serif;
+    scroll-behavior: smooth;
+
+}
+
+.section-1{
+
+    width: 100%;
+    height: 118px;
+    background-color: white;
+}
+
+.navigationWrapper{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1.5px solid #aaa ;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.navbar {
+    width: 120rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* logo */
+.nav-Logo img{
+    width: 170px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/* end of logo */
+
+/* navigation links */
+.nav-list {
+    display: flex;
+}
+.nav-list-items {
+    color: white;
+    padding: 18px 10px;
+    transition: transform 0.4s;
+}
+
+.nav-list-items a {
+    color: #3498db;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+}
+
+.nav-list-items:hover {
+    /* border-bottom: 2px solid white; */
+    
+    transform: scale(1.2);
+
+}
+
+.nav-links:hover {
+    color: #e74c3c;
+   
+}
+/* buttons */
+
+.nav-buttons {
+    margin-right: 20px;
+}
+
+.nav-btn {
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: #e74c3c;
+    font-size: 1em;
+    font-weight: 780;
+    border: none;
+    border-radius: 40px;
+}
+
+.nav-btn:hover {
+   cursor: pointer;
+}
+
+.nav-login {
+    background: none;
+    border: 1px solid red;
+    color:black;
+}
+
+.nav-login:hover {
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+}
+
+.nav-details {
+    width: 100%;
+    height: 38px;
+    background-color: #0a3d62;
+}
+
+.nav-details h1 {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 400;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 50px;
+
+}
+
+/* End of Section 1  */
+
+.destinationDetails {
+    width: 100%;
+    height: 1400px;
+    background-color: rgb(230, 227, 227);
+    position: relative;
+}
+
+.destinationWrapper {
+    position: absolute;
+    margin: 40px 40px;
+    background-color: white;
+    width: 92%;
+    height: 1330px;
+}
+
+.slide img {
+    width: 925px;
+    height: 500px;
+}
+
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+/* Css for manual navigation */
+
+.navigation-manual {
+
+    position: absolute;
+    width: 925px;
+    margin-top: 470px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.manual-btn {
+    border: 2px solid #192a56;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #e84118;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+    margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+    margin-left: -120%;
+}
+
+#radio8:checked ~ .first {
+    margin-left: -140%;
+}
+
+#radio9:checked ~ .first {
+    margin-left: -160%;
+}
+
+#radio10:checked ~ .first {
+    margin-left: -180%;
+}
+/* End for manual navigation */
+
+/* Start for Auto navigation */
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 925px;
+    justify-content: center;
+    margin-top: 470px;
+
+}
+
+.navigation-auto div {
+    border: 2px solid #192a56;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #e84118;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #e84118;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #e84118;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #e84118;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #e84118;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: #e84118;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+    background-color: #e84118;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+    background-color: #e84118;
+}
+/* End of Auto Navigation */
+
+/* Destination Details */
+
+.details {
+    margin: 50px 20px;
+}
+
+.details-Heading {
+    margin: 10px 0 50px 0;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.details-paragraph {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans HK', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.small-heading {
+    margin-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #3498db;
+    letter-spacing: 2.5px;
+    text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.small-paragraph {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: 'Noto Sans HK', sans-serif;
+
+}
+
+/* End of Destination Details */
+
+/* End of Section 2 */
+
+/* Section 6 Contact Us */
+
+.section-3 { 
+    width: 100%;
+    height: 650px;
+    background-color: #252526;
+    display: flex;
+    align-items: center;
+    padding: 0 20px; 
+} 
+.contact-heading {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 4em;
+    color: white;
+    opacity: 0.8;
+}
+
+.section-heading-line {
+    background-color: white;
+    opacity: 0.7;
+    margin-top: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+.contact-wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-wrapper h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: white;
+    opacity: 0.8;
+
+}
+
+.contact-details {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+
+
+.contact-details div {
+    width: 150px;
+    text-align: center;
+    margin: 10px 40px;
+
+}
+
+.contact-details i{
+    font-size: 2.5em;
+    color: #7a1010;
+}
+
+.contact-details h3 {
+    font-family: 'Georama', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.contact-details p {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 10px;
+    background-color: #444;
+    color: #eee;
+    border: none;
+    margin-bottom: 10px;
+    font-family: 'Georama', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.contact-form textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 150px;
+    min-height: 149px;
+}
+
+.contact-form input[type="submit"]{
+    background-color: #7a1010;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: #5f0303;
+}
+
+/* End of Section 3 Contact Us */
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 75px;
+    background-color: #0a3d62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-navigation a {
+    color: white;
+    padding: 0 10px;
+    font-family: 'Georama', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s;
+}
+
+
+.copyright {
+    color:#18dcff;
+}
+
+.footer-navigation a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+    
+}
+
+
+/* End of Section 6 Contact Us Section*/

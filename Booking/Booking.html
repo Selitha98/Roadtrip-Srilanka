@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Booking.css">
+    <title>Booking</title>
+</head>
+<body>
+
+    <div class="container">
+         <!-- Section 1 -->
+
+         <div class="section-1">
+            <!-- navigation bar -->
+               <div class="navigationWrapper">
+                   <div class="navbar">
+                   <!-- logo -->
+                       <div class="nav-Logo">
+                           <img src="ColorLogo2.png" alt="Logo">
+                       </div>
+                   <!-- end of logo -->
+                   <!-- navigation Links -->
+                       <ul class="nav-list">
+                        <li class="nav-list-items">
+                            <a href="http://localhost/Roadtripsrilanka/index.html" class="nav-links">Home</a>
+                        </li>
+                        <li class="nav-list-items">
+                            <a href="http://localhost/Roadtripsrilanka/Packages/package.html" class="nav-links">Holiday Packages</a>
+                        </li>
+                        <li class="nav-list-items">
+                            <a href="http://localhost/Roadtripsrilanka/Destinations/Destination.html" class="nav-links">Destination</a>
+                        </li>
+                           <li class="nav-list-items">
+                               <a href="#Contact-Us" class="nav-links">Contact Us</a>
+                           </li>
+                       </ul>
+                   <!-- end of navigation links -->
+                       <!--Log in & Sign up Buttons  -->
+                       <div class="nav-buttons">
+                        <button onclick="window.location.href='http://localhost/Roadtripsrilanka/login.php';" class="nav-btn nav-login">Log In</button>
+                        <button onclick="window.location.href='http://localhost/Roadtripsrilanka/signin.php';" class="nav-btn nav-signup">Sign Up</button>
+                       </div>
+                       <!--end of Log in & Sign up Buttons  -->
+                   </div>
+               </div>
+               <div class="nav-details">
+                   <h1>Booking  Your Package - Sri Lanka Road Trip</h1>
+               </div>    
+           </div>
+   
+           <!-- End of section 1 -->
+
+           <!-- Section 2 Booking -->
+
+           <div class="booking">
+               <div class="booking-wrapper">
+                <iframe class="map-booking" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8207958505086!2d79.86635281486492!3d6.912018895005687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596d4572da53%3A0x9e03c378a6e472c4!2s39%2F3%20Horton%20Place%20Colombo%207%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1628658979407!5m2!1sen!2slk" width="95%" height="300" style="border:0;"  loading="lazy"></iframe>
+
+                <div class="booking-form">
+                    <h1 class="form-heading">Book Your Package</h1>
+                    <form action="Booking.php" method="POST">
+                        <input type="text" name="Name" id="" placeholder="Enter Your Full Name"  required>
+                        <input type="email" name="email" id="" placeholder="Enter Your Email"  required>
+                        <input type="tel" name="Phone"  placeholder="Enter Your Mobile Number">
+                        <input type="text" name="packageCode"  placeholder="Enter Your Package Code">
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Enter Your Expectation Date Which You Want to travel And All You Want to Know"></textarea>
+                        <input type="submit" name="submit" value="Send Message" class="submit">
+                    </form>
+                </div>
+
+                
+               </div>
+           </div>
+
+           <!-- End of Section 2 -->
+
+           <!-- Footer -->
+         
+         <footer class="footer">
+            <div class="footer-navigation">
+                <a href="http://localhost/Roadtripsrilanka/index.html">Home</a>
+                <a href="http://localhost/Roadtripsrilanka/Packages/package.html">Holiday Packages</a>
+                <a href="http://localhost/Roadtripsrilanka/Destinations/Destination.html">Destination</a>
+                <a href="http://localhost/Roadtripsrilanka/aboutUs/aboutus.html">About Us</a>
+            </div>
+            <p class="copyright">
+                Copyright &copy;RoadTripSriLanka All Right Reserved.
+            </p>
+
+        </footer>
+        <!-- End of Footer -->
+
+           
+
+           
+        
+
+
+
+    </div>
+
+</body>
+</html>
